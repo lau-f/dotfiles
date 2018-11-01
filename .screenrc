@@ -1,0 +1,18 @@
+# don't display the copyright page
+startup_message off
+
+# tab-completion flash in heading bar
+vbell on
+
+# keep scrollback n lines
+defscrollback 10000
+
+# default screens
+screen -t main 0
+
+# remap escape sequence to ctrl-j
+escape ^jj
+
+# status line
+hardstatus alwayslastline
+hardstatus string '%{= kB}%?%-Lw%?%{r}(%{= kB}%n*%f%t%?(%u)%?%{r})%{= kB}%?%+Lw%?%?%= %{g}%{= kG}[%d/%m %c]'
